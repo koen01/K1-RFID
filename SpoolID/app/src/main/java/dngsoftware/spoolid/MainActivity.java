@@ -101,6 +101,7 @@ import dngsoftware.spoolid.databinding.SpoolDialogBinding;
 import dngsoftware.spoolid.databinding.TagDialogBinding;
 import dngsoftware.spoolid.databinding.SpoolPickerDialogBinding;
 import dngsoftware.spoolid.databinding.UpdateDialogBinding;
+import dngsoftware.spoolid.databinding.WriteTagDialogBinding;
 
 public class MainActivity extends AppCompatActivity implements NfcAdapter.ReaderCallback, NavigationView.OnNavigationItemSelectedListener {
 
