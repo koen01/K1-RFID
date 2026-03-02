@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Cfs RFID</string>
+    <string name="app_name">CFtag</string>
     <string name="this_device_does_not_support_mifare_classic_tags">This device does not support \"Mifare Classic\" tags, RFID functions disabled</string>
     <string name="please_activate_nfc">Please activate NFC</string>
     <string name="tag_found">"TAG Found: "</string>

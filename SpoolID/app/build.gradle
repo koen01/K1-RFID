@@ -7,7 +7,7 @@ android {
     compileSdk 36
 
     defaultConfig {
-        applicationId "dngsoftware.spoolid"
+        applicationId "io.github.koen01.cftag"
         minSdk 21
         targetSdk 36
         versionCode 1
