@@ -217,7 +217,7 @@ public class MainActivity extends AppCompatActivity implements NfcAdapter.Reader
 
         main.type.setSelection(getPositionByValue(main.type, PrinterType));
 
-        main.colorview.setBackgroundColor(Color.argb(255, 0, 0, 255));
+        setColorViewColor(Color.argb(255, 0, 0, 255));
         MaterialColor = "0000FF";
 
         main.txtcolor.setText(MaterialColor);
@@ -657,6 +657,14 @@ public class MainActivity extends AppCompatActivity implements NfcAdapter.Reader
         }
     }
 
+    void setColorViewColor(int color) {
+        GradientDrawable gd = new GradientDrawable();
+        gd.setShape(GradientDrawable.RECTANGLE);
+        gd.setCornerRadius(4 * getResources().getDisplayMetrics().density);
+        gd.setColor(color);
+        main.colorview.setBackground(gd);
+    }
+
     void FormatTag() {
         if (currentTag != null) {
             AlertDialog.Builder builder = new AlertDialog.Builder(context);
@@ -741,7 +749,7 @@ public class MainActivity extends AppCompatActivity implements NfcAdapter.Reader
                             if (GetMaterialName(matDb, MaterialID) != null) {
                                 MaterialColor = tagData.substring(18, 24);
                                 String Length = tagData.substring(24, 28);
-                                main.colorview.setBackgroundColor(Color.parseColor("#" + MaterialColor));
+                                setColorViewColor(Color.parseColor("#" + MaterialColor));
                                 main.txtcolor.setText(MaterialColor);
                                 main.txtcolor.setTextColor(getContrastColor(Color.parseColor("#" + MaterialColor)));
                                 MaterialName = Objects.requireNonNull(GetMaterialName(matDb, MaterialID))[0];
@@ -814,7 +822,7 @@ public class MainActivity extends AppCompatActivity implements NfcAdapter.Reader
                     if (dl.txtcolor.getText().toString().length() == 6) {
                         try {
                             int color = Color.rgb(dl.redSlider.getProgress(), dl.greenSlider.getProgress(), dl.blueSlider.getProgress());
-                            main.colorview.setBackgroundColor(color);
+                            setColorViewColor(color);
                             main.txtcolor.setText(MaterialColor);
                             main.txtcolor.setTextColor(getContrastColor(Color.parseColor("#" + MaterialColor)));
                         } catch (Exception ignored) {
