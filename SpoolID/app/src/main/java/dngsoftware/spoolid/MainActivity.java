@@ -177,6 +177,8 @@ public class MainActivity extends AppCompatActivity implements NfcAdapter.Reader
         boolean smEnabled = GetSetting(context, "enablesm", false);
         main.spoolmanSection.setVisibility(smEnabled ? View.VISIBLE : View.GONE);
         main.writebutton.setVisibility(smEnabled ? View.GONE : View.VISIBLE);
+        SaveSetting(context, "sm_spool_id", "");
+        tagWriteCount = 0;
         if (smEnabled) {
             executorService.execute(() -> matcher = new ColorMatcher(context));
             updateSpoolStatus();
