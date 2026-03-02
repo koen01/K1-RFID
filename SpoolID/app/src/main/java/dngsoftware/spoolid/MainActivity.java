@@ -2783,7 +2783,34 @@ public class MainActivity extends AppCompatActivity implements NfcAdapter.Reader
         SaveSetting(context, "sm_spool_id", String.valueOf(selected.id));
         tagWriteCount = 0;
         updateSpoolStatus();
-        WriteSpoolData(MaterialID, MaterialColor, GetMaterialLength(MaterialWeight));
+
+        Dialog writeDialog = new Dialog(context, R.style.Theme_SpoolID);
+        writeDialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        WriteTagDialogBinding wdl = WriteTagDialogBinding.inflate(getLayoutInflater());
+        writeDialog.setContentView(wdl.getRoot());
+
+        wdl.txtInstruction.setText(getString(R.string.spool_linked_write_tag_1, selected.id));
+        wdl.btnCancel.setOnClickListener(v -> writeDialog.dismiss());
+
+        String len = GetMaterialLength(MaterialWeight);
+        wdl.btnWriteTag.setOnClickListener(v -> {
+            wdl.btnWriteTag.setEnabled(false);
+            WriteSpoolData(MaterialID, MaterialColor, len, () -> {
+                wdl.txtInstruction.setText(getString(R.string.tag_1_written_now_tag_2));
+                wdl.btnWriteTag.setText(R.string.write_tag_2);
+                wdl.btnWriteTag.setEnabled(true);
+                wdl.btnWriteTag.setOnClickListener(vv -> {
+                    wdl.btnWriteTag.setEnabled(false);
+                    WriteSpoolData(MaterialID, MaterialColor, len, () -> writeDialog.dismiss());
+                });
+            });
+        });
+
+        writeDialog.show();
+        DisplayMetrics dm = new DisplayMetrics();
+        getWindowManager().getDefaultDisplay().getMetrics(dm);
+        Window w = writeDialog.getWindow();
+        if (w != null) w.setLayout((int) (dm.widthPixels * 0.85), WindowManager.LayoutParams.WRAP_CONTENT);
     }
 
     void openSpoolChooser() {

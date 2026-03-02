@@ -226,4 +226,5 @@
     <string name="write_tag_2">Write Tag 2</string>
     <string name="spool_created_confirm">Spool #%d added to Spoolman ✓\nTap Tag 1 to your phone then press Write Tag 1.</string>
     <string name="tag_1_written_now_tag_2">Tag 1 written ✓\nTap Tag 2 to your phone then press Write Tag 2.</string>
+    <string name="spool_linked_write_tag_1">Spool #%d linked ✓\nTap Tag 1 to your phone then press Write Tag 1.</string>
 </resources>
