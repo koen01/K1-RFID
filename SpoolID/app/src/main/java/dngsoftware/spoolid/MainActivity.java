@@ -176,6 +176,7 @@ public class MainActivity extends AppCompatActivity implements NfcAdapter.Reader
 
         boolean smEnabled = GetSetting(context, "enablesm", false);
         main.spoolmanSection.setVisibility(smEnabled ? View.VISIBLE : View.GONE);
+        main.writebutton.setVisibility(smEnabled ? View.GONE : View.VISIBLE);
         if (smEnabled) {
             executorService.execute(() -> matcher = new ColorMatcher(context));
             updateSpoolStatus();
@@ -809,10 +810,15 @@ public class MainActivity extends AppCompatActivity implements NfcAdapter.Reader
         String filamentId = "1" + MaterialID;
         String vendorId = "0276";
         String color = "0" + Color;
-        String serialNum = GetSpoolmanSerialNum();
-        if (serialNum == null || serialNum.isEmpty()) {
-            showToast("Spoolman spool ID not set. Create a spool in Spoolman first.", Toast.LENGTH_SHORT);
-            return;
+        String serialNum;
+        if (GetSetting(context, "enablesm", false)) {
+            serialNum = GetSpoolmanSerialNum();
+            if (serialNum == null || serialNum.isEmpty()) {
+                showToast("Spoolman spool ID not set. Create a spool in Spoolman first.", Toast.LENGTH_SHORT);
+                return;
+            }
+        } else {
+            serialNum = GetSetting(context, "ser", getString(R.string.def_ser));
         }
         String reserve = "000000";
         String batch = "A2";
@@ -2994,6 +3000,7 @@ public class MainActivity extends AppCompatActivity implements NfcAdapter.Reader
                 sdl.smhost.setTextColor(ContextCompat.getColor(context, R.color.text_main));
                 sdl.smport.setTextColor(ContextCompat.getColor(context, R.color.text_main));
                 main.spoolmanSection.setVisibility(View.VISIBLE);
+                main.writebutton.setVisibility(View.GONE);
                 if (matcher == null)
                 {
                     executorService.execute(() -> matcher = new ColorMatcher(context));
@@ -3012,6 +3019,7 @@ public class MainActivity extends AppCompatActivity implements NfcAdapter.Reader
                 sdl.smhost.setTextColor(Color.GRAY);
                 sdl.smport.setTextColor(Color.GRAY);
                 main.spoolmanSection.setVisibility(View.GONE);
+                main.writebutton.setVisibility(View.VISIBLE);
             }
             SaveSetting(context, "enablesm", isChecked);
         });
