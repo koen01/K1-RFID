@@ -1,0 +1,318 @@
+[
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/drawable_twotone_upload_24.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/drawable/twotone_upload_24.xml"
+    },
+    {
+        "merged": "dngsoftware.spoolid.app-debug-46:/layout_item_spool_spinner.xml.flat",
+        "source": "dngsoftware.spoolid.app-main-48:/layout/item_spool_spinner.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/drawable-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-pngs-42:/drawable-xxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/layout_spool_picker_dialog.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/layout/spool_picker_dialog.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/xml_tech_list.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/xml/tech_list.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/drawable-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-pngs-42:/drawable-xhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/drawable_twotone_database_24.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/drawable/twotone_database_24.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/drawable_border.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/drawable/border.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/layout_item_json.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/layout/item_json.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/drawable_twotone_cached_24.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/drawable/twotone_cached_24.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/layout_item_spool_picker.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/layout/item_spool_picker.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/menu_activity_main_drawer.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/menu/activity_main_drawer.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/layout_spinner_item_icon.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/layout/spinner_item_icon.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/color_input_border_color.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/color/input_border_color.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/drawable_ic_arrow_up.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/drawable/ic_arrow_up.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/mipmap-xxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/drawable_twotone_settings_24.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/drawable/twotone_settings_24.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/drawable_twotone_dashboard_customize_24.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/drawable/twotone_dashboard_customize_24.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/drawable_writable.png.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/drawable/writable.png"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/drawable_circle_shape.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/drawable/circle_shape.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/layout_adapter_spinner_item.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/layout/adapter_spinner_item.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/drawable_failed.png.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/drawable/failed.png"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/drawable_twotone_palette_24.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/drawable/twotone_palette_24.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/drawable_twotone_restart_alt_24.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/drawable/twotone_restart_alt_24.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/drawable-mdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-pngs-42:/drawable-mdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/drawable_divider.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/drawable/divider.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/drawable_twotone_add_24.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/drawable/twotone_add_24.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/drawable_seekbar_thumb.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/drawable/seekbar_thumb.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/mipmap-mdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/layout_manage_dialog.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/layout/manage_dialog.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/drawable_twotone_export_24.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/drawable/twotone_export_24.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/layout_spool_dialog.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/layout/spool_dialog.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/layout_activity_main.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/mipmap-xxxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/color_switch_tint_selector.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/color/switch_tint_selector.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/drawable_twotone_info_24.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/drawable/twotone_info_24.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/drawable_twotone_done_outline_24.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/drawable/twotone_done_outline_24.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/drawable_twotone_import_24.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/drawable/twotone_import_24.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/drawable_twotone_menu_24.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/drawable/twotone_menu_24.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/drawable_twotone_contactless_24.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/drawable/twotone_contactless_24.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/layout_picker_dialog.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/layout/picker_dialog.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/layout_item_tag.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/layout/item_tag.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/drawable_twotone_help_24.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/drawable/twotone_help_24.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/layout_manual_dialog.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/layout/manual_dialog.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/drawable_twotone_edit_24.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/drawable/twotone_edit_24.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/layout_tag_dialog.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/layout/tag_dialog.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/drawable_ic_arrow_down.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/drawable/ic_arrow_down.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/drawable_twotone_delete_24.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/drawable/twotone_delete_24.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-pngs-42:/drawable-anydpi-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/layout_save_dialog.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/layout/save_dialog.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/drawable_seekbar_progress.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/drawable/seekbar_progress.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/layout_add_dialog.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/layout/add_dialog.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/color_button_selector.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/color/button_selector.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/mipmap-xhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/drawable_rounded_card_background.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/drawable/rounded_card_background.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/layout_spinner_item.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/layout/spinner_item.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/layout_update_dialog.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/layout/update_dialog.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/drawable_twotone_file_download_24.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/drawable/twotone_file_download_24.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/drawable_twotone_memory_24.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/drawable/twotone_memory_24.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/layout_settings_dialog.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/layout/settings_dialog.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/drawable_twotone_nfc_24.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/drawable/twotone_nfc_24.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/drawable_twotone_settings_applications_24.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/drawable/twotone_settings_applications_24.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/drawable_rounded_edittext_background.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/drawable/rounded_edittext_background.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/drawable-ldpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-pngs-42:/drawable-ldpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/xml_nsc.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/xml/nsc.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/drawable_seekbar_border.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/drawable/seekbar_border.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/layout_nav_header_main.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/layout/nav_header_main.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/mipmap-hdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/drawable_locked.png.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/drawable/locked.png"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/layout_edit_dialog.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/layout/edit_dialog.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/drawable_seekbar_drawable.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/drawable/seekbar_drawable.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/drawable-hdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-pngs-42:/drawable-hdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/drawable_twotone_layers_clear_24.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/drawable/twotone_layers_clear_24.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/drawable_camera.png.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/drawable/camera.png"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/drawable_twotone_cancel_24.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/drawable/twotone_cancel_24.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/drawable-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-pngs-42:/drawable-xxxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/drawable_internal.png.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/drawable/internal.png"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-debug-46:/drawable_hint_background.xml.flat",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/drawable/hint_background.xml"
+    }
+]

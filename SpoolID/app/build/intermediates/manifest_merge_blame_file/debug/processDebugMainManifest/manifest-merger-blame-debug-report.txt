@@ -1,0 +1,248 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="dngsoftware.spoolid"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="36" />
+10
+11    <uses-permission android:name="android.permission.NFC" />
+11-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:3:5-62
+11-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:3:22-59
+12
+13    <uses-feature
+13-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:4:5-82
+14        android:name="android.hardware.nfc"
+14-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:4:19-54
+15        android:required="false" />
+15-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:4:55-79
+16    <uses-feature
+16-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:5:5-85
+17        android:name="android.hardware.camera"
+17-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:5:19-57
+18        android:required="false" />
+18-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:5:58-82
+19
+20    <uses-permission android:name="android.permission.INTERNET" />
+20-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:6:5-67
+20-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:6:22-64
+21    <uses-permission android:name="android.permission.CAMERA" />
+21-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:7:5-65
+21-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:7:22-62
+22    <uses-permission
+22-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:8:5-108
+23        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+23-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:8:22-78
+24        android:maxSdkVersion="28" />
+24-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:8:79-105
+25    <uses-permission
+25-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:9:5-106
+26        android:name="android.permission.READ_EXTERNAL_STORAGE"
+26-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:9:22-77
+27        android:maxSdkVersion="32" />
+27-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:9:78-104
+28
+29    <queries>
+29-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:46:5-54:15
+30        <intent>
+30-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:47:9-49:18
+31            <action android:name="android.media.action.IMAGE_CAPTURE" />
+31-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:48:13-73
+31-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:48:21-70
+32        </intent>
+33        <intent>
+33-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:50:9-53:18
+34            <action android:name="android.intent.action.PICK" />
+34-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:51:13-65
+34-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:51:21-62
+35
+36            <data android:mimeType="image/*" />
+36-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:52:13-48
+36-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:52:19-45
+37        </intent>
+38    </queries>
+39
+40    <permission
+40-->[androidx.core:core:1.13.0] /Users/koen/.gradle/caches/9.2.1/transforms/651c37c0c61752f296cf481a2a3eebdd/transformed/core-1.13.0/AndroidManifest.xml:22:5-24:47
+41        android:name="dngsoftware.spoolid.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+41-->[androidx.core:core:1.13.0] /Users/koen/.gradle/caches/9.2.1/transforms/651c37c0c61752f296cf481a2a3eebdd/transformed/core-1.13.0/AndroidManifest.xml:23:9-81
+42        android:protectionLevel="signature" />
+42-->[androidx.core:core:1.13.0] /Users/koen/.gradle/caches/9.2.1/transforms/651c37c0c61752f296cf481a2a3eebdd/transformed/core-1.13.0/AndroidManifest.xml:24:9-44
+43
+44    <uses-permission android:name="dngsoftware.spoolid.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+44-->[androidx.core:core:1.13.0] /Users/koen/.gradle/caches/9.2.1/transforms/651c37c0c61752f296cf481a2a3eebdd/transformed/core-1.13.0/AndroidManifest.xml:26:5-97
+44-->[androidx.core:core:1.13.0] /Users/koen/.gradle/caches/9.2.1/transforms/651c37c0c61752f296cf481a2a3eebdd/transformed/core-1.13.0/AndroidManifest.xml:26:22-94
+45
+46    <application
+46-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:10:5-45:19
+47        android:allowBackup="true"
+47-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:12:9-35
+48        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+48-->[androidx.core:core:1.13.0] /Users/koen/.gradle/caches/9.2.1/transforms/651c37c0c61752f296cf481a2a3eebdd/transformed/core-1.13.0/AndroidManifest.xml:28:18-86
+49        android:debuggable="true"
+50        android:extractNativeLibs="true"
+51        android:icon="@mipmap/ic_launcher_foreground"
+51-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:13:9-54
+52        android:label="@string/app_name"
+52-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:14:9-41
+53        android:networkSecurityConfig="@xml/nsc"
+53-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:11:9-49
+54        android:roundIcon="@mipmap/ic_launcher_foreground"
+54-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:15:9-59
+55        android:supportsRtl="true"
+55-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:16:9-35
+56        android:testOnly="true"
+57        android:theme="@style/Theme.SpoolID" >
+57-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:17:9-45
+58        <activity
+58-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:18:9-27:20
+59            android:name="dngsoftware.spoolid.MainActivity"
+59-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:19:13-41
+60            android:configChanges="orientation|screenSize|screenLayout|smallestScreenSize"
+60-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:20:13-91
+61            android:exported="true"
+61-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:21:13-36
+62            android:launchMode="singleInstance" >
+62-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:22:13-48
+63            <intent-filter>
+63-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:23:13-26:29
+64                <action android:name="android.intent.action.MAIN" />
+64-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:24:17-69
+64-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:24:25-66
+65
+66                <category android:name="android.intent.category.LAUNCHER" />
+66-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:25:17-77
+66-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:25:27-74
+67            </intent-filter>
+68        </activity>
+69        <activity
+69-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:28:9-44:20
+70            android:name="dngsoftware.spoolid.LaunchActivity"
+70-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:29:13-43
+71            android:exported="true"
+71-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:30:13-36
+72            android:launchMode="singleInstance"
+72-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:32:13-48
+73            android:theme="@style/Theme.Transparent" >
+73-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:31:13-53
+74            <intent-filter>
+74-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:33:13-36:29
+75                <action android:name="android.nfc.action.TECH_DISCOVERED" />
+75-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:34:17-77
+75-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:34:25-74
+76
+77                <category android:name="android.intent.category.DEFAULT" />
+77-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:35:17-76
+77-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:35:27-73
+78            </intent-filter>
+79            <intent-filter>
+79-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:37:13-40:29
+80                <action android:name="android.nfc.action.TAG_DISCOVERED" />
+80-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:38:17-76
+80-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:38:25-73
+81
+82                <category android:name="android.intent.category.DEFAULT" />
+82-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:35:17-76
+82-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:35:27-73
+83            </intent-filter>
+84
+85            <meta-data
+85-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:41:13-43:53
+86                android:name="android.nfc.action.TECH_DISCOVERED"
+86-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:42:17-66
+87                android:resource="@xml/tech_list" />
+87-->/Users/koen/StudioProjects/K1-RFID/SpoolID/app/src/main/AndroidManifest.xml:43:17-50
+88        </activity>
+89
+90        <service
+90-->[androidx.room:room-runtime:2.6.1] /Users/koen/.gradle/caches/9.2.1/transforms/8be60eb72b337d5935a5cce49203c930/transformed/room-runtime-2.6.1/AndroidManifest.xml:24:9-28:63
+91            android:name="androidx.room.MultiInstanceInvalidationService"
+91-->[androidx.room:room-runtime:2.6.1] /Users/koen/.gradle/caches/9.2.1/transforms/8be60eb72b337d5935a5cce49203c930/transformed/room-runtime-2.6.1/AndroidManifest.xml:25:13-74
+92            android:directBootAware="true"
+92-->[androidx.room:room-runtime:2.6.1] /Users/koen/.gradle/caches/9.2.1/transforms/8be60eb72b337d5935a5cce49203c930/transformed/room-runtime-2.6.1/AndroidManifest.xml:26:13-43
+93            android:exported="false" />
+93-->[androidx.room:room-runtime:2.6.1] /Users/koen/.gradle/caches/9.2.1/transforms/8be60eb72b337d5935a5cce49203c930/transformed/room-runtime-2.6.1/AndroidManifest.xml:27:13-37
+94
+95        <provider
+95-->[androidx.emoji2:emoji2:1.3.0] /Users/koen/.gradle/caches/9.2.1/transforms/b48c1550eca5c7e8847cfb06dfd9e0cb/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+96            android:name="androidx.startup.InitializationProvider"
+96-->[androidx.emoji2:emoji2:1.3.0] /Users/koen/.gradle/caches/9.2.1/transforms/b48c1550eca5c7e8847cfb06dfd9e0cb/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
+97            android:authorities="dngsoftware.spoolid.androidx-startup"
+97-->[androidx.emoji2:emoji2:1.3.0] /Users/koen/.gradle/caches/9.2.1/transforms/b48c1550eca5c7e8847cfb06dfd9e0cb/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
+98            android:exported="false" >
+98-->[androidx.emoji2:emoji2:1.3.0] /Users/koen/.gradle/caches/9.2.1/transforms/b48c1550eca5c7e8847cfb06dfd9e0cb/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
+99            <meta-data
+99-->[androidx.emoji2:emoji2:1.3.0] /Users/koen/.gradle/caches/9.2.1/transforms/b48c1550eca5c7e8847cfb06dfd9e0cb/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+100                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+100-->[androidx.emoji2:emoji2:1.3.0] /Users/koen/.gradle/caches/9.2.1/transforms/b48c1550eca5c7e8847cfb06dfd9e0cb/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+101                android:value="androidx.startup" />
+101-->[androidx.emoji2:emoji2:1.3.0] /Users/koen/.gradle/caches/9.2.1/transforms/b48c1550eca5c7e8847cfb06dfd9e0cb/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+102            <meta-data
+102-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/koen/.gradle/caches/9.2.1/transforms/4a62b18690eb5794edb3bba3241d2d77/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
+103                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+103-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/koen/.gradle/caches/9.2.1/transforms/4a62b18690eb5794edb3bba3241d2d77/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
+104                android:value="androidx.startup" />
+104-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/koen/.gradle/caches/9.2.1/transforms/4a62b18690eb5794edb3bba3241d2d77/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
+105            <meta-data
+105-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/koen/.gradle/caches/9.2.1/transforms/5fdbaf539a50c41d22402f978ba16bbc/transformed/profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+106                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+106-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/koen/.gradle/caches/9.2.1/transforms/5fdbaf539a50c41d22402f978ba16bbc/transformed/profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+107                android:value="androidx.startup" />
+107-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/koen/.gradle/caches/9.2.1/transforms/5fdbaf539a50c41d22402f978ba16bbc/transformed/profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+108        </provider>
+109
+110        <uses-library
+110-->[androidx.window:window:1.0.0] /Users/koen/.gradle/caches/9.2.1/transforms/83117528c600648892dca7fc0a1457e4/transformed/window-1.0.0/AndroidManifest.xml:25:9-27:40
+111            android:name="androidx.window.extensions"
+111-->[androidx.window:window:1.0.0] /Users/koen/.gradle/caches/9.2.1/transforms/83117528c600648892dca7fc0a1457e4/transformed/window-1.0.0/AndroidManifest.xml:26:13-54
+112            android:required="false" />
+112-->[androidx.window:window:1.0.0] /Users/koen/.gradle/caches/9.2.1/transforms/83117528c600648892dca7fc0a1457e4/transformed/window-1.0.0/AndroidManifest.xml:27:13-37
+113        <uses-library
+113-->[androidx.window:window:1.0.0] /Users/koen/.gradle/caches/9.2.1/transforms/83117528c600648892dca7fc0a1457e4/transformed/window-1.0.0/AndroidManifest.xml:28:9-30:40
+114            android:name="androidx.window.sidecar"
+114-->[androidx.window:window:1.0.0] /Users/koen/.gradle/caches/9.2.1/transforms/83117528c600648892dca7fc0a1457e4/transformed/window-1.0.0/AndroidManifest.xml:29:13-51
+115            android:required="false" />
+115-->[androidx.window:window:1.0.0] /Users/koen/.gradle/caches/9.2.1/transforms/83117528c600648892dca7fc0a1457e4/transformed/window-1.0.0/AndroidManifest.xml:30:13-37
+116
+117        <receiver
+117-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/koen/.gradle/caches/9.2.1/transforms/5fdbaf539a50c41d22402f978ba16bbc/transformed/profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+118            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+118-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/koen/.gradle/caches/9.2.1/transforms/5fdbaf539a50c41d22402f978ba16bbc/transformed/profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+119            android:directBootAware="false"
+119-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/koen/.gradle/caches/9.2.1/transforms/5fdbaf539a50c41d22402f978ba16bbc/transformed/profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+120            android:enabled="true"
+120-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/koen/.gradle/caches/9.2.1/transforms/5fdbaf539a50c41d22402f978ba16bbc/transformed/profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+121            android:exported="true"
+121-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/koen/.gradle/caches/9.2.1/transforms/5fdbaf539a50c41d22402f978ba16bbc/transformed/profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+122            android:permission="android.permission.DUMP" >
+122-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/koen/.gradle/caches/9.2.1/transforms/5fdbaf539a50c41d22402f978ba16bbc/transformed/profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+123            <intent-filter>
+123-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/koen/.gradle/caches/9.2.1/transforms/5fdbaf539a50c41d22402f978ba16bbc/transformed/profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+124                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+124-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/koen/.gradle/caches/9.2.1/transforms/5fdbaf539a50c41d22402f978ba16bbc/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+124-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/koen/.gradle/caches/9.2.1/transforms/5fdbaf539a50c41d22402f978ba16bbc/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+125            </intent-filter>
+126            <intent-filter>
+126-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/koen/.gradle/caches/9.2.1/transforms/5fdbaf539a50c41d22402f978ba16bbc/transformed/profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+127                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+127-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/koen/.gradle/caches/9.2.1/transforms/5fdbaf539a50c41d22402f978ba16bbc/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+127-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/koen/.gradle/caches/9.2.1/transforms/5fdbaf539a50c41d22402f978ba16bbc/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+128            </intent-filter>
+129            <intent-filter>
+129-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/koen/.gradle/caches/9.2.1/transforms/5fdbaf539a50c41d22402f978ba16bbc/transformed/profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+130                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+130-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/koen/.gradle/caches/9.2.1/transforms/5fdbaf539a50c41d22402f978ba16bbc/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+130-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/koen/.gradle/caches/9.2.1/transforms/5fdbaf539a50c41d22402f978ba16bbc/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+131            </intent-filter>
+132            <intent-filter>
+132-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/koen/.gradle/caches/9.2.1/transforms/5fdbaf539a50c41d22402f978ba16bbc/transformed/profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+133                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+133-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/koen/.gradle/caches/9.2.1/transforms/5fdbaf539a50c41d22402f978ba16bbc/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+133-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/koen/.gradle/caches/9.2.1/transforms/5fdbaf539a50c41d22402f978ba16bbc/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+134            </intent-filter>
+135        </receiver>
+136    </application>
+137
+138</manifest>

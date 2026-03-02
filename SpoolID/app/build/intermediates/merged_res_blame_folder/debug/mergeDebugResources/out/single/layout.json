@@ -1,0 +1,82 @@
+[
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-mergeDebugResources-45:/layout/picker_dialog.xml",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/layout/picker_dialog.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-mergeDebugResources-45:/layout/nav_header_main.xml",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/layout/nav_header_main.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-mergeDebugResources-45:/layout/item_json.xml",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/layout/item_json.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-mergeDebugResources-45:/layout/item_spool_picker.xml",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/layout/item_spool_picker.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-mergeDebugResources-45:/layout/spinner_item_icon.xml",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/layout/spinner_item_icon.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-mergeDebugResources-45:/layout/manage_dialog.xml",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/layout/manage_dialog.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-mergeDebugResources-45:/layout/update_dialog.xml",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/layout/update_dialog.xml"
+    },
+    {
+        "merged": "dngsoftware.spoolid.app-mergeDebugResources-45:/layout/item_spool_spinner.xml",
+        "source": "dngsoftware.spoolid.app-main-48:/layout/item_spool_spinner.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-mergeDebugResources-45:/layout/adapter_spinner_item.xml",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/layout/adapter_spinner_item.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-mergeDebugResources-45:/layout/manual_dialog.xml",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/layout/manual_dialog.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-mergeDebugResources-45:/layout/save_dialog.xml",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/layout/save_dialog.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-mergeDebugResources-45:/layout/activity_main.xml",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-mergeDebugResources-45:/layout/add_dialog.xml",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/layout/add_dialog.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-mergeDebugResources-45:/layout/settings_dialog.xml",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/layout/settings_dialog.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-mergeDebugResources-45:/layout/tag_dialog.xml",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/layout/tag_dialog.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-mergeDebugResources-45:/layout/spinner_item.xml",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/layout/spinner_item.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-mergeDebugResources-45:/layout/spool_picker_dialog.xml",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/layout/spool_picker_dialog.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-mergeDebugResources-45:/layout/edit_dialog.xml",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/layout/edit_dialog.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-mergeDebugResources-45:/layout/spool_dialog.xml",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/layout/spool_dialog.xml"
+    },
+    {
+        "merged": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-mergeDebugResources-45:/layout/item_tag.xml",
+        "source": "/Users/koen/.gradle/daemon/9.2.1/dngsoftware.spoolid.app-main-48:/layout/item_tag.xml"
+    }
+]
