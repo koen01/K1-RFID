@@ -583,7 +583,9 @@ public class MainActivity extends AppCompatActivity implements NfcAdapter.Reader
         return null;
     }
 
-    void WriteTag(String tagData) {
+    void WriteTag(String tagData) { WriteTag(tagData, null); }
+
+    void WriteTag(String tagData, Runnable onSuccess) {
         if (currentTag == null) {
             showToast(R.string.no_tag_found, Toast.LENGTH_SHORT);
             return;
@@ -632,6 +634,7 @@ public class MainActivity extends AppCompatActivity implements NfcAdapter.Reader
                                 updateSpoolStatus();
                                 writeRfidTagIdToSpoolman(writtenUid, tagWriteCount);
                             }
+                            if (onSuccess != null) onSuccess.run();
                         });
 
                     } catch (Exception e) {
@@ -677,11 +680,12 @@ public class MainActivity extends AppCompatActivity implements NfcAdapter.Reader
         if (smHost.isEmpty()) return;
         int smPort = GetSetting(context, "smport", 7912);
         String fieldKey = writeIndex == 1 ? "rfid_tag_id_1" : "rfid_tag_id_2";
+        String cleanUid = tagUid.toUpperCase().replace(" ", "");
         executorService.execute(() -> {
             try {
                 String baseUrl = "http://" + smHost + ":" + smPort + "/api/v1";
                 JSONObject extra = new JSONObject();
-                extra.put(fieldKey, tagUid.toUpperCase());
+                extra.put(fieldKey, JSONObject.quote(cleanUid));
                 JSONObject patch = new JSONObject();
                 patch.put("extra", extra);
                 performSmRequest(context, baseUrl + "/spool/" + spoolId, "PATCH", patch.toString());
@@ -797,9 +801,12 @@ public class MainActivity extends AppCompatActivity implements NfcAdapter.Reader
     }
 
     void WriteSpoolData(String MaterialID, String Color, String Length) {
-        //SecureRandom random = new SecureRandom();
-        String filamentId = "1" + MaterialID; //material_database.json
-        String vendorId = "0276"; //0276 creality
+        WriteSpoolData(MaterialID, Color, Length, null);
+    }
+
+    void WriteSpoolData(String MaterialID, String Color, String Length, Runnable onSuccess) {
+        String filamentId = "1" + MaterialID;
+        String vendorId = "0276";
         String color = "0" + Color;
         String serialNum = GetSpoolmanSerialNum();
         if (serialNum == null || serialNum.isEmpty()) {
@@ -808,7 +815,7 @@ public class MainActivity extends AppCompatActivity implements NfcAdapter.Reader
         }
         String reserve = "000000";
         String batch = "A2";
-        WriteTag("AB124" + vendorId + batch + filamentId + color + Length + serialNum + reserve + PrinterType);
+        WriteTag("AB124" + vendorId + batch + filamentId + color + Length + serialNum + reserve + PrinterType, onSuccess);
     }
 
     String GetSpoolmanSerialNum() {
@@ -2683,10 +2690,19 @@ public class MainActivity extends AppCompatActivity implements NfcAdapter.Reader
                                             sdl.txtSpoolCreated.setText(getString(R.string.spool_created_confirm, finalSpoolId));
                                             sdl.txtSpoolCreated.setVisibility(View.VISIBLE);
                                             sdl.btncls.setText(R.string.close);
-                                            sdl.btnadd.setText(R.string.write_tag);
+                                            String len = GetMaterialLength(MaterialWeight);
+                                            sdl.btnadd.setText(R.string.write_tag_1);
                                             sdl.btnadd.setOnClickListener(vv -> {
-                                                spoolDialog.dismiss();
-                                                WriteSpoolData(MaterialID, MaterialColor, GetMaterialLength(MaterialWeight));
+                                                sdl.btnadd.setEnabled(false);
+                                                WriteSpoolData(MaterialID, MaterialColor, len, () -> {
+                                                    sdl.txtSpoolCreated.setText(getString(R.string.tag_1_written_now_tag_2));
+                                                    sdl.btnadd.setText(R.string.write_tag_2);
+                                                    sdl.btnadd.setEnabled(true);
+                                                    sdl.btnadd.setOnClickListener(vvv -> {
+                                                        sdl.btnadd.setEnabled(false);
+                                                        WriteSpoolData(MaterialID, MaterialColor, len, () -> spoolDialog.dismiss());
+                                                    });
+                                                });
                                             });
                                         });
                                     }
