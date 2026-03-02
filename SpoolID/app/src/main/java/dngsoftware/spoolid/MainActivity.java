@@ -2852,6 +2852,26 @@ public class MainActivity extends AppCompatActivity implements NfcAdapter.Reader
         pkl.btnCancel.setOnClickListener(v -> spoolPickerDialog.dismiss());
     }
 
+    void ensureSpoolmanRfidField(String smHost, int smPort) {
+        if (smHost == null || smHost.isEmpty()) return;
+        executorService.execute(() -> {
+            try {
+                String baseUrl = "http://" + smHost + ":" + smPort + "/api/v1";
+                String fieldsJson = performSmRequest(context, baseUrl + "/field/spool", "GET", null);
+                if (fieldsJson == null) return;
+                JSONArray fields = new JSONArray(fieldsJson);
+                for (int i = 0; i < fields.length(); i++) {
+                    if ("rfid_tag_id".equals(fields.getJSONObject(i).optString("key"))) return;
+                }
+                JSONObject body = new JSONObject();
+                body.put("name", "RFID Tag ID");
+                body.put("field_type", "text");
+                performSmRequest(context, baseUrl + "/field/spool/rfid_tag_id", "POST", body.toString());
+            } catch (Exception ignored) {
+            }
+        });
+    }
+
     public void openSettings() {
         settingsDialog = new Dialog(context, R.style.Theme_SpoolID);
         settingsDialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -2892,6 +2912,11 @@ public class MainActivity extends AppCompatActivity implements NfcAdapter.Reader
                 main.btnLinkExisting.setOnClickListener(v -> linkExistingSpoolAndWrite());
                 loadSpoolsIntoSpinner();
                 mainHandler.post(() -> updateSpoolStatus());
+                String smHostNow = Objects.requireNonNull(sdl.smhost.getText()).toString().trim();
+                int smPortNow;
+                try { smPortNow = Integer.parseInt(Objects.requireNonNull(sdl.smport.getText()).toString().trim()); }
+                catch (Exception e) { smPortNow = 7912; }
+                ensureSpoolmanRfidField(smHostNow, smPortNow);
             }
             else {
                 sdl.smhost.setTextColor(Color.GRAY);
