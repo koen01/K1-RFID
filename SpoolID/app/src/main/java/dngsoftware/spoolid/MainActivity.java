@@ -625,7 +625,6 @@ public class MainActivity extends AppCompatActivity implements NfcAdapter.Reader
                         }
                         playBeep();
                         showToast(R.string.data_written_to_tag, Toast.LENGTH_SHORT);
-                        UpdateSpoolmanExtraAfterTagWrite(bytesToHex(currentTag.getId()));
                         mainHandler.post(() -> {
                             if (GetSetting(context, "enablesm", false)) {
                                 tagWriteCount = Math.min(tagWriteCount + 1, 2);
@@ -656,76 +655,6 @@ public class MainActivity extends AppCompatActivity implements NfcAdapter.Reader
             main.txtSpoolStatus.setText(getString(R.string.spool_status, id, tagWriteCount) + checks);
             main.txtSpoolStatus.setVisibility(View.VISIBLE);
         }
-    }
-
-    void UpdateSpoolmanExtraAfterTagWrite(String tagUid) {
-        if (tagUid == null) return;
-        String uid = tagUid.trim().toUpperCase();
-        if (uid.isEmpty()) return;
-
-        String smHost = GetSetting(context, "smhost", "");
-        if (smHost.isEmpty()) return;
-        int smPort = GetSetting(context, "smport", 7912);
-
-        String spoolIdRaw = GetSetting(context, "sm_spool_id", "");
-        if (spoolIdRaw == null || spoolIdRaw.trim().isEmpty()) return;
-
-        int spoolId;
-        try {
-            spoolId = Integer.parseInt(spoolIdRaw.trim());
-        } catch (Exception ignored) {
-            return;
-        }
-        if (spoolId <= 0) return;
-
-        String serialNum = GetSpoolmanSerialNum();
-        if (serialNum == null || serialNum.isEmpty()) return;
-
-        executorService.execute(() -> {
-            try {
-                String baseUrl = "http://" + smHost + ":" + smPort + "/api/v1";
-                String spoolJson = performSmRequest(context, baseUrl + "/spool/" + spoolId, "GET", null);
-                if (spoolJson == null) return;
-
-                JSONObject spoolObj = new JSONObject(spoolJson);
-                JSONObject extra = spoolObj.optJSONObject("extra");
-                if (extra == null) extra = new JSONObject();
-
-                Object existing = extra.opt("creality_tag_uid");
-                if (existing instanceof JSONArray) {
-                    JSONArray arr = (JSONArray) existing;
-                    boolean found = false;
-                    for (int i = 0; i < arr.length(); i++) {
-                        String v = arr.optString(i, "");
-                        if (v.equalsIgnoreCase(uid)) {
-                            found = true;
-                            break;
-                        }
-                    }
-                    if (!found) arr.put(uid);
-                    extra.put("creality_tag_uid", arr.toString());
-                } else if (existing instanceof String) {
-                    String prev = ((String) existing).trim();
-                    if (!prev.equalsIgnoreCase(uid) && !prev.isEmpty()) {
-                        JSONArray arr = new JSONArray();
-                        arr.put(prev.toUpperCase());
-                        arr.put(uid);
-                        extra.put("creality_tag_uid", arr.toString());
-                    } else {
-                        extra.put("creality_tag_uid", JSONObject.quote(uid));
-                    }
-                } else {
-                    extra.put("creality_tag_uid", JSONObject.quote(uid));
-                }
-
-                extra.put("creality_serial_num", JSONObject.quote(serialNum));
-
-                JSONObject patch = new JSONObject();
-                patch.put("extra", extra);
-                performSmRequest(context, baseUrl + "/spool/" + spoolId, "PATCH", patch.toString());
-            } catch (Exception ignored) {
-            }
-        });
     }
 
     void FormatTag() {
