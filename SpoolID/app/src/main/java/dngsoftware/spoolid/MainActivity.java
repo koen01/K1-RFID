@@ -3033,6 +3033,9 @@ public class MainActivity extends AppCompatActivity implements NfcAdapter.Reader
             sdl.smhost.setTextColor(Color.GRAY);
             sdl.smport.setTextColor(Color.GRAY);
         }
+        sdl.lnkOriginalApp.setOnClickListener(v ->
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/DnG-Crafts/K2-RFID")))
+        );
         sdl.btncls.setOnClickListener(v -> settingsDialog.dismiss());
         settingsDialog.setOnDismissListener(dialogInterface -> {
             SaveSetting(context, "smhost", Objects.requireNonNull(sdl.smhost.getText()).toString());

@@ -236,6 +236,36 @@
                 android:layout_height="1dp"
                 android:background="#DDDDDD"
                 android:layout_marginVertical="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/credits"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="?attr/colorPrimary"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/credits_text"
+                android:textSize="14sp"
+                android:textColor="@color/text_alt"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/lnkOriginalApp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/credits_link"
+                android:textSize="14sp"
+                android:textColor="?attr/colorPrimary"
+                android:textStyle="bold"
+                android:paddingVertical="4dp"
+                android:layout_marginBottom="4dp"/>
+
         </LinearLayout>
 
         <Button
