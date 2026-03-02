@@ -2632,11 +2632,6 @@ public class MainActivity extends AppCompatActivity implements NfcAdapter.Reader
                             }
                             sBody.put("location", Objects.requireNonNull(sdl.sLocation.getText()).toString());
                             sBody.put("lot_nr", Objects.requireNonNull(sdl.sLotNr.getText()).toString());
-                            JSONObject extra = new JSONObject();
-                            extra.put("creality_creality_id", JSONObject.quote(MaterialID));
-                            extra.put("creality_color", JSONObject.quote(colorName));
-                            extra.put("creality_printer_type", JSONObject.quote(SelectedPrinter));
-                            sBody.put("extra", extra);
                             sBody.put("comment", Objects.requireNonNull(sdl.sComment.getText()).toString());
                             sBody.put("archived", sdl.sArchived.isChecked());
                             String ret = performSmRequest(context, baseUrl + "/spool", "POST", sBody.toString());
