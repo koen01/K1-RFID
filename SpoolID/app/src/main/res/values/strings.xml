@@ -221,4 +221,6 @@
     <string name="link_existing_spool_title">Link existing spool</string>
     <string name="change">Change</string>
     <string name="search_spools">Search spools…</string>
+    <string name="write_tag">Write Tag</string>
+    <string name="spool_created_confirm">Spool #%d added to Spoolman ✓\nNow tap your RFID tag to write it.</string>
 </resources>

@@ -625,10 +625,12 @@ public class MainActivity extends AppCompatActivity implements NfcAdapter.Reader
                         }
                         playBeep();
                         showToast(R.string.data_written_to_tag, Toast.LENGTH_SHORT);
+                        String writtenUid = bytesToHex(currentTag.getId());
                         mainHandler.post(() -> {
                             if (GetSetting(context, "enablesm", false)) {
                                 tagWriteCount = Math.min(tagWriteCount + 1, 2);
                                 updateSpoolStatus();
+                                writeRfidTagIdToSpoolman(writtenUid, tagWriteCount);
                             }
                         });
 
@@ -663,6 +665,29 @@ public class MainActivity extends AppCompatActivity implements NfcAdapter.Reader
         gd.setCornerRadius(4 * getResources().getDisplayMetrics().density);
         gd.setColor(color);
         main.colorview.setBackground(gd);
+    }
+
+    void writeRfidTagIdToSpoolman(String tagUid, int writeIndex) {
+        String spoolIdRaw = GetSetting(context, "sm_spool_id", "").trim();
+        if (spoolIdRaw.isEmpty()) return;
+        int spoolId;
+        try { spoolId = Integer.parseInt(spoolIdRaw); } catch (Exception e) { return; }
+        if (spoolId <= 0) return;
+        String smHost = GetSetting(context, "smhost", "");
+        if (smHost.isEmpty()) return;
+        int smPort = GetSetting(context, "smport", 7912);
+        String fieldKey = writeIndex == 1 ? "rfid_tag_id_1" : "rfid_tag_id_2";
+        executorService.execute(() -> {
+            try {
+                String baseUrl = "http://" + smHost + ":" + smPort + "/api/v1";
+                JSONObject extra = new JSONObject();
+                extra.put(fieldKey, tagUid.toUpperCase());
+                JSONObject patch = new JSONObject();
+                patch.put("extra", extra);
+                performSmRequest(context, baseUrl + "/spool/" + spoolId, "PATCH", patch.toString());
+            } catch (Exception ignored) {
+            }
+        });
     }
 
     void FormatTag() {
@@ -2448,9 +2473,12 @@ public class MainActivity extends AppCompatActivity implements NfcAdapter.Reader
         sdl.containerFilament.setVisibility(View.GONE);
         sdl.containerSpool.setVisibility(View.GONE);
 
+        boolean[] spoolCreated = {false};
+
         sdl.tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
+                if (spoolCreated[0]) return;
                 hideKeyboard(sdl.tabLayout);
                 sdl.containerVendor.setVisibility(View.GONE);
                 sdl.containerFilament.setVisibility(View.GONE);
@@ -2644,10 +2672,22 @@ public class MainActivity extends AppCompatActivity implements NfcAdapter.Reader
                                     if (spoolId > 0) {
                                         SaveSetting(context, "sm_spool_id", String.valueOf(spoolId));
                                         tagWriteCount = 0;
+                                        final int finalSpoolId = spoolId;
                                         mainHandler.post(() -> {
                                             updateSpoolStatus();
-                                            spoolDialog.dismiss();
-                                            WriteSpoolData(MaterialID, MaterialColor, GetMaterialLength(MaterialWeight));
+                                            spoolCreated[0] = true;
+                                            sdl.tabLayout.setAlpha(0.4f);
+                                            sdl.containerVendor.setVisibility(View.GONE);
+                                            sdl.containerFilament.setVisibility(View.GONE);
+                                            sdl.containerSpool.setVisibility(View.GONE);
+                                            sdl.txtSpoolCreated.setText(getString(R.string.spool_created_confirm, finalSpoolId));
+                                            sdl.txtSpoolCreated.setVisibility(View.VISIBLE);
+                                            sdl.btncls.setText(R.string.close);
+                                            sdl.btnadd.setText(R.string.write_tag);
+                                            sdl.btnadd.setOnClickListener(vv -> {
+                                                spoolDialog.dismiss();
+                                                WriteSpoolData(MaterialID, MaterialColor, GetMaterialLength(MaterialWeight));
+                                            });
                                         });
                                     }
                                 } catch (Exception ignored) {
@@ -2855,13 +2895,24 @@ public class MainActivity extends AppCompatActivity implements NfcAdapter.Reader
                 String fieldsJson = performSmRequest(context, baseUrl + "/field/spool", "GET", null);
                 if (fieldsJson == null) return;
                 JSONArray fields = new JSONArray(fieldsJson);
+                boolean hasTag1 = false, hasTag2 = false;
                 for (int i = 0; i < fields.length(); i++) {
-                    if ("rfid_tag_id".equals(fields.getJSONObject(i).optString("key"))) return;
+                    String key = fields.getJSONObject(i).optString("key");
+                    if ("rfid_tag_id_1".equals(key)) hasTag1 = true;
+                    if ("rfid_tag_id_2".equals(key)) hasTag2 = true;
                 }
-                JSONObject body = new JSONObject();
-                body.put("name", "RFID Tag ID");
-                body.put("field_type", "text");
-                performSmRequest(context, baseUrl + "/field/spool/rfid_tag_id", "POST", body.toString());
+                if (!hasTag1) {
+                    JSONObject b = new JSONObject();
+                    b.put("name", "RFID Tag ID 1");
+                    b.put("field_type", "text");
+                    performSmRequest(context, baseUrl + "/field/spool/rfid_tag_id_1", "POST", b.toString());
+                }
+                if (!hasTag2) {
+                    JSONObject b = new JSONObject();
+                    b.put("name", "RFID Tag ID 2");
+                    b.put("field_type", "text");
+                    performSmRequest(context, baseUrl + "/field/spool/rfid_tag_id_2", "POST", b.toString());
+                }
             } catch (Exception ignored) {
             }
         });

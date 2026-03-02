@@ -719,29 +719,47 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="16dp"
+        android:orientation="vertical"
         android:gravity="center">
 
-        <Button
-            android:textColor="@color/text_inverted"
-            android:id="@+id/btncls"
+        <TextView
+            android:id="@+id/txtSpoolCreated"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="40dp"
-            android:textSize="16sp"
-            android:padding="14dp"
-            android:text="@string/cancel"
-            tools:ignore="ButtonStyle"/>
+            android:layout_marginBottom="12dp"
+            android:textSize="14sp"
+            android:textColor="@color/text_main"
+            android:gravity="center"
+            android:visibility="gone" />
 
-        <Button
-            android:textColor="@color/text_inverted"
-            android:id="@+id/btnadd"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
-            android:padding="14dp"
-            android:layout_marginStart="40dp"
-            android:text="@string/add"
-            tools:ignore="ButtonStyle"/>
+            android:gravity="center">
+
+            <Button
+                android:textColor="@color/text_inverted"
+                android:id="@+id/btncls"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="40dp"
+                android:textSize="16sp"
+                android:padding="14dp"
+                android:text="@string/cancel"
+                tools:ignore="ButtonStyle"/>
+
+            <Button
+                android:textColor="@color/text_inverted"
+                android:id="@+id/btnadd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:padding="14dp"
+                android:layout_marginStart="40dp"
+                android:text="@string/add"
+                tools:ignore="ButtonStyle"/>
+
+        </LinearLayout>
     </LinearLayout>
 
 </LinearLayout>
